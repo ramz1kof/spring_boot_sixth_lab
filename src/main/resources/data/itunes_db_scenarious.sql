@@ -135,8 +135,8 @@ ALTER TABLE ostap_koziaryk_itunes_full.album
     ADD CONSTRAINT FK_album_artist
         FOREIGN KEY (artist_id)
             REFERENCES ostap_koziaryk_itunes_full.artist (id)
-                ON DELETE CASCADE
-                ON UPDATE CASCADE,
+            ON DELETE CASCADE
+            ON UPDATE CASCADE,
 
     ADD CONSTRAINT FK_album_genre
         FOREIGN KEY (genre_id)
@@ -237,8 +237,9 @@ ALTER TABLE ostap_koziaryk_itunes_full.record_label_album
             ON DELETE CASCADE
             ON UPDATE CASCADE;
 
-INSERT INTO ostap_koziaryk_itunes_full.customer (email, password, first_name, surname, birth_date, country, phone_number,
-                                            nickname)
+INSERT INTO ostap_koziaryk_itunes_full.customer (email, password, first_name, surname, birth_date, country,
+                                                 phone_number,
+                                                 nickname)
 VALUES ('ostapb@gmail.com', 'ostapko468', 'Ostap', 'Bodnarkevich', '2002-07-26', 'Ukraine', '096-683-03-07',
         'ostapbodnar228'),
        ('kirilko@yahoo.com', 'kirilrd24484', 'Kiril', 'Rashkiv', '1997-03-23', 'Russia', '3836857860', 'kirilkord'),
@@ -296,8 +297,9 @@ INSERT INTO ostap_koziaryk_itunes_full.music_video(size_in_megabytes, release_da
 VALUES ('39.6', '1985-07-13'),
        ('50.4', '1987-10-17');
 
-INSERT INTO ostap_koziaryk_itunes_full.song (title, artist_id, album_id, price, duration_in_minutes, release_date, genre_id,
-                                        popularity, with_parental_advisory_logo, music_video_id)
+INSERT INTO ostap_koziaryk_itunes_full.song (title, artist_id, album_id, price, duration_in_minutes, release_date,
+                                             genre_id,
+                                             popularity, with_parental_advisory_logo, music_video_id)
 VALUES ('Bohemian Rhapsody', '1', '1', '0.69', '5.54', '2018-10-19', '1', '100', '0', '1'),
        ('Somebody To Love', '1', '1', '0.69', '4.55', '2018-10-19', '1', '70', '1', '2'),
        ('Jumsuit', '2', '2', '0.69', '3.58', '2018-09-28', '4', '100', '1', NULL),
