@@ -20,10 +20,8 @@ public class AlbumService {
   }
 
   public Album getAlbumById(Integer albumId) {
-    if (albumRepository.existsById(albumId)) {
-      return albumRepository.findById(albumId).get();
-    }
-    return null;
+    return albumRepository.findById(albumId)
+    .orElseThrow(() -> new RuntimeException("There is no such album by given id"));
   }
 
   @Transactional

@@ -16,8 +16,8 @@ public class AlbumController {
   private AlbumService albumService;
 
   @GetMapping(value = "/{id}")
-  public Album getAlbum(@PathVariable("id") Integer albumId) {
-    return albumService.getAlbumById(albumId);
+  public ResponseEntity<Album> getAlbum(@PathVariable("id") Integer albumId) {
+    return ResponseEntity.ok(albumService.getAlbumById(albumId));
   }
 
   @GetMapping
