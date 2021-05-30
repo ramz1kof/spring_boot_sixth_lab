@@ -1,0 +1,4 @@
+#!/bin/bash
+service mysql start
+mysql < ./src/main/resources/data/itunes_db_scenarious.sql
+java -jar ./target/spring_boot_sixth_lab-1.0-SNAPSHOT.jar

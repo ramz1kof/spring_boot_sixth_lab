@@ -32,7 +32,7 @@ public class AlbumController {
 
   @PutMapping(value = "/{id}")
   public ResponseEntity<Album> updateAlbum(final @RequestBody Album album,
-                                           @PathVariable("id") Integer albumId) {
+                                          @PathVariable("id") Integer albumId) {
     album.setId(albumId);
     return albumService.updateAlbum(album, albumId);
   }

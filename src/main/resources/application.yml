@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://mysql-db:3306/ostap_koziaryk_itunes_full
+    url: jdbc:mysql://localhost:3306/ostap_koziaryk_itunes_full
     username: m1rrox
     password: 528193746
     driver-class-name: com.mysql.jdbc.Driver

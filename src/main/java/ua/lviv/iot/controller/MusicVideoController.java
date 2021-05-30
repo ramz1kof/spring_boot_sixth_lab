@@ -32,7 +32,7 @@ public class MusicVideoController {
 
   @PutMapping(value = "/{id}")
   public ResponseEntity<MusicVideo> updateMusicVideo(final @RequestBody MusicVideo musicVideo,
-                                                     @PathVariable("id") Integer musicVideoId) {
+                                                    @PathVariable("id") Integer musicVideoId) {
     musicVideo.setId(musicVideoId);
     return musicVideoService.updateMusicVideo(musicVideo, musicVideoId);
   }
