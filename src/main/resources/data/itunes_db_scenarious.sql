@@ -1,9 +1,3 @@
-CREATE USER IF NOT EXISTS 'root'@'%' IDENTIFIED BY '528193746';
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';
-
-CREATE USER IF NOT EXISTS 'm1rrox'@'%' IDENTIFIED BY '528193746';
-GRANT ALL PRIVILEGES ON *.* TO 'm1rrox'@'%';
-
 CREATE DATABASE IF NOT EXISTS ostap_koziaryk_itunes_full;
 USE ostap_koziaryk_itunes_full;
 
